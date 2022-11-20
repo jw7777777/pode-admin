@@ -15,7 +15,7 @@ RUN Install-Module Pode -Force
 
 
 # copy over the local files to the container
-COPY . /usr/src/app/
+COPY src /usr/src/app/
 
 # expose the port
 EXPOSE 8080
