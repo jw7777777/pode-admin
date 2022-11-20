@@ -19,5 +19,11 @@ Start-PodeServer {
     Add-PodeRoute -Method Get -Path '/register' -ScriptBlock {
         Write-PodeViewResponse -Path 'register'
     }
+    Add-PodeRoute -Method Get -Path '/charts' -ScriptBlock {
+        Write-PodeViewResponse -Path 'charts'
+    }
+    Add-PodeRoute -Method Get -Path '/tables' -ScriptBlock {
+        Write-PodeViewResponse -Path 'tables'
+    }
 }
 
