@@ -10,11 +10,23 @@ Start-PodeServer {
     Add-PodeRoute -Method Get -Path '/cards' -ScriptBlock {
         Write-PodeViewResponse -Path 'cards'
     }
+    Add-PodeRoute -Method Get -Path '/utilities-animation' -ScriptBlock {
+        Write-PodeViewResponse -Path 'utilities-animation'
+    }
+    Add-PodeRoute -Method Get -Path '/utilities-border' -ScriptBlock {
+        Write-PodeViewResponse -Path 'utilities-border'
+    }
     Add-PodeRoute -Method Get -Path '/utilities-color' -ScriptBlock {
         Write-PodeViewResponse -Path 'utilities-color'
     }
+    Add-PodeRoute -Method Get -Path '/utilities-other' -ScriptBlock {
+        Write-PodeViewResponse -Path 'utilities-other'
+    }
     Add-PodeRoute -Method Get -Path '/login' -ScriptBlock {
         Write-PodeViewResponse -Path 'login'
+    }
+    Add-PodeRoute -Method Get -Path '/blank' -ScriptBlock {
+        Write-PodeViewResponse -Path 'blank'
     }
     Add-PodeRoute -Method Get -Path '/register' -ScriptBlock {
         Write-PodeViewResponse -Path 'register'
@@ -25,5 +37,11 @@ Start-PodeServer {
     Add-PodeRoute -Method Get -Path '/tables' -ScriptBlock {
         Write-PodeViewResponse -Path 'tables'
     }
+    Add-PodeRoute -Method Get -Path '/forgot-password' -ScriptBlock {
+        Write-PodeViewResponse -Path 'forgot-password'
+    }
+    Add-PodeRoute -Method Get -Path '/404' -ScriptBlock {
+        Write-PodeViewResponse -Path '404'
+    } 
 }
 
